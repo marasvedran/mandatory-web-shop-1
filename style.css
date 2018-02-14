@@ -1,0 +1,1086 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "Julius Sans One",sans-serif;
+}
+
+/*  Header menyerna SEK osv... */
+#topHeader
+{
+    background-color: lightgrey;
+    margin: 0;
+    width: 100%;
+    height: 150px;
+}
+
+#topHeader > h1
+{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 40pt;
+    font-weight: bold;
+    padding-top: 30px;
+    text-align: left;
+
+    margin: 0;
+    padding-left: 215px;
+}
+/*icon nav*/
+#topHeader > #option1 {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    list-style: none;
+    font-size: 9pt;
+}
+
+
+#topHeader > #option2
+{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    justify-content: flex-end;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
+
+#topHeader > #option2 > li > a > img
+{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/*
+#topHeader > #option2
+{
+    position: absolute;
+    top: 0px;
+    right: 150px;
+    list-style: none;
+    font-size: 9pt;
+}
+
+#topHeader > #option2 > li > img
+{
+    width: 25px;
+    height: 25px;
+}
+
+#topHeader > #option2 > #login > img
+{
+    position: absolute;
+    padding-left: 50px;
+}
+
+#topHeader > #option2 > #onskelista > img
+{
+    position: absolute;
+    padding-left: 25px;
+
+}
+
+#topHeader > #option2 > #kassa > a > img
+{
+    position: absolute;
+    padding-left: 25px;
+    width: 25px;
+    height: 25px;
+
+}
+
+*/
+
+
+#topHeader > #option1 > li > img
+{
+    width: 25px;
+    height: 20px;
+}
+
+/* Top Nav här */
+/* Navigationen ( menyn _) *//************************************************************
+.nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.nav > ul > li > a > img{
+    width: 25px;
+    height: 25px;
+    padding-top: 10px;
+}
+
+.nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    text-align: left;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding-left: 15px;
+    border-bottom: 1px solid #888;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    background-color: #005f5f;
+}
+
+.nav a.active {
+    background-color: #aaa;
+    color: #444;
+    cursor: default;
+}
+
+/* Under menyn *//************************************************************
+.nav li li {
+    font-size: .8em;
+}
+
+/* Main börjar här */
+/************************************************************ NAV HÄR nya */
+div.nav > ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444;
+    text-align: center;
+}
+
+div.nav > ul > li
+{
+    display: inline-block;
+}
+
+li a, .dropbtn
+{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div.nav > ul > li a:hover, .dropdown:hover .dropbtn
+{
+    background-color: #005f5f;
+}
+
+li.dropdown
+{
+    display: inline-block;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover
+{
+    background-color: #f1f1f1
+}
+
+#thisPage
+{
+    background-color: #005f5f;
+}
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+main
+{
+    width: 1000px;
+    margin: 0 auto;
+
+}
+/* --- SPREAD IMAGE --- */
+main >#spread-index > figure
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+main > #spread-index > figure > img{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+/* rea bild offer */
+main > #offer > figure
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+main > #offer > figure > img{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+
+
+}
+main > #offer > p{
+
+    list-style-type: none;
+    border-top: 1pt solid #D11216;
+    border-bottom: 1pt solid #D11216 ;
+    display: block;
+    margin: 10px auto 10px auto;
+    padding: 10px 0 10px 0;
+    color: #D11216;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    width: 1000px;
+    height: auto    ;
+
+
+}
+
+/* topSeller section home-index */
+main > #index-topSeller > header > h2{
+    display: block;
+    text-align: center;
+    color: #62a395;
+    border-bottom: 0.5pt solid #62a395;
+    padding: 10px;
+    margin: 50px auto 10px auto;
+}
+
+main > #index-topSeller > .products
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 1000px;
+
+}
+
+main > #index-topSeller > .products > .index-Product
+{
+    justify-content: space-between;
+    margin: 20px auto 60px auto;
+}
+main > #index-topSeller > .products > .index-Product > img
+{
+    width: 5.5cm;
+    height: auto;
+}
+
+main > #index-topSeller > .products > .index-Product >.heart-It
+{
+    background: url("images/icons/icone_heart.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+main > #index-topSeller > .products > .index-Product >.shoppingBag
+{
+    background: url("images/icons/icon_shopping_bag.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+
+
+/* topSeller section dam herr barn */
+#containerCategories
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+
+}
+#topSeller figure
+{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 3 70%;
+}
+.Categories
+{
+    padding: 0 10px 5px 10px;
+    margin: 65px 0 20px 0;
+    flex: 1 30%;
+    border-right: 0.7pt solid #62a395;
+    width: 140px;
+    height: 200vh;
+}
+.Categories header > h4
+{
+    font-weight: bold;
+    text-align: left;
+}
+.Categories > ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+.Categories > ul >li
+{
+    font-size: 11pt;
+    line-height: 16pt;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+#topSeller
+{
+    width: 800px;
+    margin-left: 30px;
+}
+/*buttons gilla och lägg i shoppingbag*/
+#topSeller > .firstProduct > #product1 > .shoppingBag{
+    background: url("images/icons/icon_shopping_bag.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+#topSeller > .firstProduct > #product1 > .heart-It{
+    background: url("images/icons/icone_heart.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+#topSeller > .firstProduct > #product2 > .shoppingBag{
+    background: url("images/icons/icon_shopping_bag.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+#topSeller > .firstProduct > #product2 > .heart-It{
+    background: url("images/icons/icone_heart.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+#topSeller > .firstProduct > #product3 > .shoppingBag{
+    background: url("images/icons/icon_shopping_bag.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+#topSeller > .firstProduct > #product3 > .heart-It{
+    background: url("images/icons/icone_heart.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+#topSeller > .firstProduct > #product4 > .shoppingBag{
+    background: url("images/icons/icon_shopping_bag.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+#topSeller > .firstProduct > #product4 > .heart-It{
+    background: url("images/icons/icone_heart.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+#topSeller > .firstProduct > #product5 > .shoppingBag{
+    background: url("images/icons/icon_shopping_bag.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+#topSeller > .firstProduct > #product5 > .heart-It{
+    background: url("images/icons/icone_heart.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+#topSeller > .firstProduct > #product6 > .shoppingBag{
+    background: url("images/icons/icon_shopping_bag.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+#topSeller > .firstProduct > #product6 > .heart-It{
+    background: url("images/icons/icone_heart.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+
+#topSeller > header{
+    width: 720px;
+    margin: 20px;
+}
+
+#topSeller > header > h2
+{
+    text-align: center;
+    color: #62a395;
+    border-bottom: 0.5pt solid #62a395;
+    padding: 10px 0 10px 0;
+    font-weight: bold;
+}
+
+main > #topSeller > figure.firstProduct
+{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+main > #topSeller > figure.firstProduct > img
+{
+    height: auto;
+    width: 5.5cm;
+}
+
+main > #topSeller > figure.firstProduct > #product1 > img
+{
+    height: auto;
+    width: 5.5cm;
+}
+
+main > #topSeller > figure.firstProduct > #product2 > img
+{
+    height: auto;
+    width: 5.5cm;
+}
+
+main > #topSeller > figure.firstProduct > #product3 > img
+{
+    height: auto;
+    width: 5.5cm;
+}
+
+main > #topSeller > figure.firstProduct > #product4 > img
+{
+    height: auto;
+    width: 5.5cm;
+}
+
+main > #topSeller > figure.firstProduct > #product5 > img
+{
+    height: auto;
+    width: 5.5cm;
+}
+
+main > #topSeller > figure.firstProduct > #product6 > img
+{
+    height: auto;
+    width: 5.5cm;
+}
+/* Kontakta oss sida Style*/
+#container-ContactUs
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#container-ContactUs > #contact-us
+{
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+}
+#container-ContactUs > #contact-us > form
+{
+    width: 500px;
+    height: 500px;
+    margin-bottom: 50px;
+}
+#container-ContactUs > #contact-us > form > fieldset
+{
+    display: flex;
+    flex-direction: column;
+    border: 0.8pt solid #62a395;
+    height: 430px;
+    margin: 50px auto 50px auto;
+    line-height: 30pt;
+    padding: 20px;
+}
+#container-ContactUs > #contact-us > form > fieldset > legend
+{
+    color: #62a395;
+    font-size: 26pt;
+}
+#container-ContactUs > #contact-us > form > fieldset > label
+{
+    color: #62a395;
+    font-size: 12pt;
+}
+
+#container-ContactUs > #contact-us > form > fieldset > input
+{
+    padding: 4px;
+}
+#container-ContactUs > #kontaktUppgifter
+{
+    margin-top: 42px;
+    padding: 10px;
+}
+
+#container-ContactUs > #kontaktUppgifter > header
+{
+    color: #62a395;
+}
+#container-ContactUs > #kontaktUppgifter > p
+{
+    padding: 10px 0 10px 0;
+}
+
+input[type="submit"]
+{
+    background-color: #62a395;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+
+input:last-of-type:hover {
+    background: #77a198;
+}
+/* Checkout page */
+.fraktType > img
+{
+    width: 45px;
+    height: 40px;
+}
+
+main > .container > .nestledContainer > img
+{
+    width: auto;
+    height: 4cm;
+}
+
+.nestledContainer
+{
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #444;
+    padding: 10px;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.container > h1
+{
+    justify-content: flex-start;
+    color: #62a395;
+    font-size: 26pt;
+}
+
+.nestledContainer
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.nestledContainer, p, img, form
+{
+    justify-content: space-between;
+}
+.container > .nestledContainer > p
+{
+    font-weight: bold;
+}
+
+.container > .nestledContainer > form > p
+{
+    font-weight: bold;
+}
+
+.totalPay
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.totalPay, p
+{
+    justify-content: space-between;
+}
+
+.totalPay p:first-child
+{
+    font-weight: bold;
+}
+
+/* Checkout page style delivery form*/
+main > section:last-child > form
+{
+    width: 1000px;
+    margin: 30px auto 40px auto;
+    height: 700px;
+}
+main > section:last-child > form > .fraktInfo > fieldset
+{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    color: #62a395;
+    border: 0.8pt solid #62a395;
+    padding: 20px;
+}
+
+main > section:last-child > form > .fraktInfo > fieldset > fieldset
+{
+    border: 0.8pt solid #62a395;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+}
+
+main > section:last-child > form > .fraktInfo > fieldset > legend
+{
+    font-size: 26pt;
+}
+main > section:last-child > form > .fraktInfo > fieldset > label
+{
+    padding: 10px 0 10px 0;
+    font-size: 12pt;
+}
+main > section:last-child > form > .fraktInfo > fieldset > input
+{
+    padding: 4px;
+}
+input[type="radio"]
+{
+    padding: 0 20px 0 20px;
+}
+main > section:last-child > form > .fraktInfo > fieldset > fieldset > img
+{
+    padding: 0 5px 0 10px;
+}
+
+/* Footer section här */
+
+footer
+{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #444444;
+    width: 100%;
+    height: 90px;
+}
+footer > ul
+{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer > p{
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+footer > ul > li
+{
+    list-style-type: none;
+    margin: 0;
+    padding-top: 20px;
+}
+footer > ul > li > a > img
+{
+    width: 30px;
+    height: 30px;
+}
+
+/* höjd=7cm // bredd=5.5cm = Bilderna på Produkterna som visas */
+
+
+
+/*******************************************
+650px Mobila enheter detta är för menyn bara
+********************************************/
+/************************************************************
+@media screen and (min-width: 650px) {
+    .nav li {
+        width: 130px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+        display: inline-block;
+        margin-right: -4px;
+    }
+
+    .nav a {
+        border-bottom: none;
+    }
+
+    .nav > ul > li {
+        text-align: center;
+    }
+
+    .nav > ul > li > a {
+        padding-left: 0;
+    }
+
+    /* Under menyer *//************************************************************
+    .nav li ul {
+        position: absolute;
+        display: none;
+        width: inherit;
+    }
+
+    .nav li:hover ul {
+        display: block;
+    }
+
+    .nav li ul li {
+        display: block;
+    }
+    main > section > figure > img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+
+    }
+
+}
+/************************Joel************************************/
+@media screen and (max-width: 768px) {
+
+    main{
+        width: 100%;
+    }
+
+    main >#spread-index > figure
+    {
+        width: 100%;
+    }
+    main > #spread-index > figure > img{
+        width: 100%;
+        height: auto;
+
+    }
+    /* rea bild offer */
+    main > #offer > figure
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    main > #offer > figure > img{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+
+
+    }
+    main > #index-topSeller > .products
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    main > #index-topSeller > .products > .index-Product {
+        justify-content: center;
+        align-content: center;
+    }
+    #topHeader > h1
+    {
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 40pt;
+        font-weight: bold;
+        padding-top: 30px;
+        /* margin: 15px;*/
+        margin: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+    main > #offer {
+        width: 100%;
+        display: block
+    }
+
+    main > #offer > figure > img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+
+    }
+    main > #offer > p {
+
+        list-style-type: none;
+        border-top: 1pt solid #D11216;
+        border-bottom: 1pt solid #D11216;
+        display: block;
+        margin: 10px 0 10px 0;
+        padding: 10px 0 10px 0;
+        color: #D11216;
+        position: relative;
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+        height: auto;
+    }
+    #containerCategories
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 40%;
+        margin: 0;
+
+    }
+
+    nav.Categories
+     {
+        /* padding: 0 10px 5px 10px;*/
+         margin: 0;
+        width: 40%;
+        border-right: 0;
+        height: 300px;
+        display:block;
+        padding-left: 100%;
+        padding-bottom: 40px;
+     }
+    .Categories > ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: inline-block;
+        width: 40%;
+
+    }
+    .Categories > ul >li
+    {
+        font-size: 11pt;
+        line-height: 16pt;
+        padding: 0;
+        list-style-type: none;
+
+    }
+
+    #topSeller
+    {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 90%;
+
+    }
+
+    #topSeller > header
+    {
+        text-align: center;
+        color: #62a395;
+        padding: 10px 0 10px 0;
+        font-weight: bold;
+        width: 100%;
+        margin-top: 20px;
+
+    }
+    #topSeller figure
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    main > #topSeller > figure.firstProduct
+    {
+        margin: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
+    }
+    main > #topSeller > figure.firstProduct
+    {
+        margin: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
+        width: 60% ;
+    }
+    #container-ContactUs
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    #container-ContactUs > #contact-us
+    {
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+
+    }
+    #container-ContactUs > #contact-us > form
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #container-ContactUs > #contact-us > form > fieldset
+    {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        height: 430px;
+        margin: 50px 0 50px 0;
+        line-height: 30pt;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    #container-ContactUs > #contact-us > form > fieldset > input
+    {
+        padding: 8px;
+    }
+    #container-ContactUs > #contact-us > form > fieldset > label {
+        margin: 0;
+    }
+    #container-ContactUs > #kontaktUppgifter
+    {
+        margin-top: 42px;
+        padding: 0;
+    }
+    /*CHECKOUT*/
+    .fraktType > img
+    {
+        width: 25px;
+        height: 20px;
+    }
+
+    main > .container > .nestledContainer > img
+    {
+        width: auto;
+        height: 2cm;
+    }
+
+    .nestledContainer
+    {
+        padding: 10px;
+    }
+
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nestledContainer
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .container > .nestledContainer > p
+    {
+        font-weight: bold;
+        font-size: 10pt;
+    }
+    /* Checkout page style delivery form*/
+    main > section:last-child > form
+    {
+        width: 100%;
+        margin: 30px 0 40px 0;
+        height: 850px;
+    }
+    main > section:last-child > form > .fraktInfo > fieldset
+    {
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+        color: #62a395;
+        border: none;
+        padding: 20px;
+    }
+
+    main > section:last-child > form > .fraktInfo > fieldset > fieldset
+    {
+        border: 0.8pt solid #62a395;
+        padding: 20px;
+        margin: 20px 0 20px 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+    main > section:last-child > form > .fraktInfo > fieldset > input
+    {
+        padding: 4px;
+    }
+    main > section:last-child > form > .fraktInfo > fieldset > fieldset > img
+    {
+        padding: 0 5px 0 10px;
+    }
+
+}
+
+
+
+
+
+
+/*Sök boxen */
+.searchBox
+{
+
+    padding: 0 0 23px 0;
+    margin: 0 auto 0 auto;
+    background: #444;
+    float: right;
+}
+
+.searchBox > button
+{
+
+}

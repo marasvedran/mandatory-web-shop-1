@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>NUOVO - Mode</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <meta name="author" content="Aida Shala, Abbe Abou Taleb, Joel Thorson">
+    <meta name ="description" content="webbshop för kläder - mode till dam, herr och barn">
+    <meta name="keywords" content="DAM, HERR, BARN, klänningar, tröjor, byxor, produkter, kjolar, toppar, skjortor, jackor, överdelar, underdelar, nyheter, kontaktuppgifter, toppsäljare, helsingborg, sweden, drottninggatan 1, telefontider, öppettider, login">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header id="topHeader">
+    <h1>NUOVO</h1>
+    <ul id="option1">
+        <li><img src="images/icons/icon_se_flag.png" alt="Sverige"> </li>
+        <li>SEK</li>
+    </ul>
+
+    <ul id="option2">
+        <!-- <div id="rightTop"> -->
+        <li id="login"> <a href="#"> <img src="images/icons/icon_profile.png" alt="Profil"> </a> </li>
+        <li id="onskelista"> <a href="#"> <img src="images/icons/icone_heart.png" alt="Önskelista"> </a> </li>
+        <li id="kassa"> <a href="checkout.html"> <img src="images/icons/icon_shopping_bag.png" alt="Kassa"> </a> </li>
+        <!-- </div> -->
+    </ul>
+</header>
+<header>
+    <div class="nav">
+
+        <ul>
+            <li><a href="index.html">HEM</a></li>
+            <li class="dropdown">
+                <a href="dam_products.html" class="dropbtn">DAM</a>
+                <div class="dropdown-content">
+                    <a href="products.html">Toppar</a>
+                    <a href="products.html">Klänningar</a>
+                    <a href="products.html">Skor</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="herr_products.html" class="dropbtn">HERR</a>
+                <div class="dropdown-content">
+                    <a href="products.html">Tröjor</a>
+                    <a href="products.html">Byxor</a>
+                    <a href="products.html">Skor</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="barn_products.html" class="dropbtn">BARN</a>
+                <div class="dropdown-content">
+                    <a href="products.html">Tröjor</a>
+                    <a href="products.html">Byxor</a>
+                    <a href="products.html">Skor</a>
+                </div>
+            </li>
+            <li><a href="contact.html">KONTAKTA OSS</a></li>
+        </ul>
+    </div>
+    <!-- <ul>
+         <li class="home"><a href="index.html"><img src="images/icons/home-black.png"></a></li>
+         <li class="dam"><a href="dam_products.html">Dam</a>
+             <ul>
+                 <li><a href="products.html">Toppar</a></li>
+                 <li><a href="products.html">Klänningar</a></li>
+                 <li><a href="products.html">Skor</a></li>
+             </ul>
+         </li>
+         <li class="herr"><a href="herr_products.html">Herr</a>
+             <ul>
+                 <li><a href="products.html">Tröjor</a></li>
+                 <li><a href="products.html">Byxor</a></li>
+                 <li><a href="products.html">Skor</a></li>
+             </ul>
+         </li>
+         <li class="barn"><a href="#">Barn</a>
+             <ul>
+                 <li><a href="products.html">Tröjor</a></li>
+                 <li><a href="products.html">Byxor</a></li>
+                 <li><a href="products.html">Skor</a></li>
+             </ul>
+         </li>
+         <li class="contact"><a href="contact.html">Kontakta oss</a></li>
+     </ul>
+ </div>  -->
+</header>
+
+
+
+<main>
+
+<section class="container">
+        <h1>Checkout</h1>
+        <section class="nestledContainer">
+        <img src="images/products/BARN/dresses/ch-d%20(1).jpg" alt="Bild på min produkt i kassa.">
+        <p>Produkt namn: Dress Svart</p>
+        <p>Pris: 500kr</p>
+
+            <form action="http://www.example.com/profile.php">
+                <p>Färg</p>
+                <select name="colour">
+                    <option value="svart">Svart</option>
+                    <option value="vit">Vit</option>
+                    <option value="röd">Röd</option>
+                </select>
+            </form>
+
+        </section>
+
+    <section class="totalPay">
+        <p>Totalt:</p>
+        <p>500kr</p>
+    </section>
+</section>
+
+
+    <section>
+        <form action="mailto:aboutalebabbe@gmail.com" enctype="text/plain" method="post">
+            <div class="fraktInfo">
+            <fieldset>
+                <legend>Frakt Information</legend>
+            <label for="fname">Förnamn: </label>
+            <input id="fname" minlength="3" type="text" placeholder="Förnamn" name="fname" pattern="[a-zA-Z ]+" required>
+
+            <label for="lname">Efternamn: </label>
+            <input id="lname" minlength="3" type="text" placeholder="Efternamn" name="lname" pattern="[a-zA-Z ]+" required>
+
+            <label for="address">Address: </label>
+            <input id="address" minlength="3" type="text" placeholder="Address" name="address" pattern="[a-zA-Z ]+[0-9]" required>
+
+            <label for="stad">Stad: </label>
+            <input id="stad" minlength="3" type="text" placeholder="Stad" name="stad" pattern="[a-zA-Z ]+" required>
+
+            <label for="postnr">Post nr: </label>
+            <input id="postnr" minlength="3" type="text" placeholder="Postnr" name="postnr" pattern="[0-9]{5}" required>
+
+            <label for="land">Land: </label>
+            <input id="land" minlength="3" type="text" placeholder="Land" name="land" pattern="[a-zA-Z ]+" required>
+
+            <label for="email">Email: </label>
+            <input id="email" type="email" placeholder="Email"  name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <fieldset class="fraktType">
+                <legend>Välj frakt</legend>
+
+
+            <input value="Shipping" type="radio" name="Shipping" required> <img src="images/icons/icon_free_shipping.png" alt="Bild på posttyp."> Standard
+            <input value="Shipping" type="radio" name="Shipping" required> <img src="images/icons/icon_express_shipping.png" alt="Bild på posttyp."> Express
+            <input value="Shipping" type="radio" name="Shipping" required> <img src="images/icons/icon_home_shipping.png" alt="Bild på posttyp."> Leverans Hem
+            </fieldset>
+
+            <input class="skickaKnapp" type="submit" value="Skicka">
+            </fieldset>
+            </div>
+        </form>
+
+    </section>
+</main>
+
+
+<footer>
+    <p>Follow us:</p>
+    <ul>
+        <li><a href="http://www.facebook.com"><img src='images/icons/facebook.png' alt="Facebook"></a></li>
+        <li><a href="http://www.instagram.com"><img src='images/icons/icon_instagram.png' alt="Instagram"></a></li>
+        <li><a href="http://www.youtube.com"><img src='images/icons/icone_youtube.png' alt="Youtube"></a></li>
+    </ul>
+</footer>
+</body>
+</html>
