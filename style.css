@@ -54,100 +54,13 @@ html, body{
     height: 30px;
 }
 
-
-
-/*
-#topHeader > #option2
-{
-    position: absolute;
-    top: 0px;
-    right: 150px;
-    list-style: none;
-    font-size: 9pt;
-}
-
-#topHeader > #option2 > li > img
-{
-    width: 25px;
-    height: 25px;
-}
-
-#topHeader > #option2 > #login > img
-{
-    position: absolute;
-    padding-left: 50px;
-}
-
-#topHeader > #option2 > #onskelista > img
-{
-    position: absolute;
-    padding-left: 25px;
-
-}
-
-#topHeader > #option2 > #kassa > a > img
-{
-    position: absolute;
-    padding-left: 25px;
-    width: 25px;
-    height: 25px;
-
-}
-
-*/
-
-
 #topHeader > #option1 > li > img
 {
     width: 25px;
     height: 20px;
 }
 
-/* Top Nav här */
-/* Navigationen ( menyn _) *//************************************************************
-.nav ul {
-    list-style: none;
-    background-color: #444;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-.nav > ul > li > a > img{
-    width: 25px;
-    height: 25px;
-    padding-top: 10px;
-}
 
-.nav li {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2em;
-    line-height: 40px;
-    text-align: left;
-}
-
-.nav a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    padding-left: 15px;
-    border-bottom: 1px solid #888;
-    transition: .3s background-color;
-}
-
-.nav a:hover {
-    background-color: #005f5f;
-}
-
-.nav a.active {
-    background-color: #aaa;
-    color: #444;
-    cursor: default;
-}
-
-/* Under menyn *//************************************************************
-.nav li li {
-    font-size: .8em;
-}
 
 /* Main börjar här */
 /************************************************************ NAV HÄR nya */
@@ -327,7 +240,7 @@ main > #index-topSeller > .products > .index-Product >.shoppingBag
 #topSeller figure
 {
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     flex: 3 70%;
 }
@@ -364,7 +277,7 @@ main > #index-topSeller > .products > .index-Product >.shoppingBag
 #topSeller
 {
     width: 800px;
-    margin-left: 30px;
+    margin: 30px auto;
 }
 /*buttons gilla och lägg i shoppingbag*/
 #topSeller > .firstProduct > #product1 > .shoppingBag{
