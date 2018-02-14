@@ -92,8 +92,6 @@ function ProductLoad(){
         let images = document.createElement("img");
         newDivs.appendChild(images);
         images.setAttribute("src", clothProducts[places].imgUrl);
-        ///images.setAttribute("width", "150px");
-        //images.setAttribute("height", "210px");
 
         let pHeading = document.createElement("p");
         let textHeading = document.createTextNode(clothProducts[places].name);
@@ -107,6 +105,17 @@ function ProductLoad(){
         newFigures.appendChild(pPrice);
         pPrice.appendChild(textPrice);
         pPrice.style.margin = "8px";
+
+        let descriptionProduct = document.createElement("p");
+        let textProduct = document.createTextNode(clothProducts[places].description);
+        newFigures.appendChild(descriptionProduct);
+        descriptionProduct.appendChild(textProduct);
+        descriptionProduct.style.fontSize = "9pt";
+        descriptionProduct.style.fontFamily = "Century Gothic";
+        descriptionProduct.style.margin = "8px";
+        descriptionProduct.style.width = "180px";
+
+
 
 
 
