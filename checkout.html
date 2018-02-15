@@ -84,33 +84,35 @@
         </section>
     </section>
     <section>
-        <form action="mailto:aboutalebabbe@gmail.com" enctype="text/plain" method="post">
+        <!-- pattern="[a-zA-Z ]+", pattern="[a-zA-Z ]+",pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$",
+         pattern="[a-zA-Z ]+[0-9], pattern="[a-zA-Z ]+", "pattern="[0-9]{5}", pattern="[a-zA-Z ]+" -->
+        <form action="mailto:aidamshala@gmail.com" enctype="text/plain" method="post" name="formBeforePay">
             <div class="fraktInfo">
             <fieldset>
                 <legend>Frakt Information</legend>
             <label for="fname">Förnamn: </label>
-            <input id="fname" minlength="3" type="text" placeholder="Förnamn" name="fname" pattern="[a-zA-Z ]+" required>
+            <input id="fname" minlength="2" type="text" placeholder="Förnamn" name="fname">
 
             <label for="lname">Efternamn: </label>
-            <input id="lname" minlength="3" type="text" placeholder="Efternamn" name="lname" pattern="[a-zA-Z ]+" required>
+            <input id="lname" minlength="2" type="text" placeholder="Efternamn" name="lname">
 
             <label for="email">Email: </label>
-            <input id="email" type="email" placeholder="Email"  name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <input id="email" type="email" placeholder="Email"  name="email">
 
             <label for="PhoneNumber">Telefonnummer: </label>
-            <input id="PhoneNumber" type="Number" placeholder="Telefonnummer"  name="phoneNumber" pattern="[0-9]" required>
+            <input id="PhoneNumber" type="number" placeholder="Telefonnummer"  name="phoneNumber">
 
             <label for="address">Address: </label>
-            <input id="address" minlength="3" type="text" placeholder="Address" name="address" pattern="[a-zA-Z ]+[0-9]" required>
+            <input id="address" minlength="3" type="text" placeholder="Address" name="address">
 
             <label for="stad">Stad: </label>
-            <input id="stad" minlength="3" type="text" placeholder="Stad" name="stad" pattern="[a-zA-Z ]+" required>
+            <input id="stad" minlength="3" type="text" placeholder="Stad" name="stad">
 
             <label for="postnr">Post nr: </label>
-            <input id="postnr" minlength="3" type="text" placeholder="Postnr" name="postnr" pattern="[0-9]{5}" required>
+            <input id="postnr" minlength="3" type="text" placeholder="Postnr" name="postnr">
 
             <label for="land">Land: </label>
-            <input id="land" minlength="3" type="text" placeholder="Land" name="land" pattern="[a-zA-Z ]+" required>
+            <input id="land" minlength="3" type="text" placeholder="Land" name="land">
 
             <label for="comments">Meddelande: </label>
             <textarea name="comments" id="comments" rows="7" cols="40" minlength="10" maxlength="255"></textarea>
