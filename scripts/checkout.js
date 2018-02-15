@@ -1,12 +1,13 @@
-//when window of products is opened it will load the product images
-window.addEventListener('load', ProductImgLoad);
+
+//object med input??
 
 
-//array of image objects
-let clothProducts = clothItems[{product: "skirt", name: "Amalia - Espirit", price: 299, description:  }]
+//button listener to check for validation on form
 
+let continueBtn = document.getElementsByClassName("skickaKnapp");
 
-product name
-price
-description
-url to an image
+continueBtn.addEventListener("submit", checkForValidation);
+
+function checkForValidation() {
+
+}
