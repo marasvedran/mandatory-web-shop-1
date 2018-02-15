@@ -2,12 +2,12 @@
 window.addEventListener('load', ProductLoad);
 
 //array of image objects
-let clothProducts =[{product: "dress", name: "Amalia - Espirit", price: 299, description: "Black party lace dress", imgUrl: "images/products/DAM/dresses/d%20(3).jpg", idDiv: "product1" },
-    {product: "skirt", name: "Emla - Ivy", price: 199, description: "Red skirt, knee length with belt", imgUrl: "images/products/DAM/skirts/d-s%20(5).jpg", idDiv: "product2" },
-    {product: "trousers", name: "Cindy - Dorthy Perkins", price: 599, description: "One piece trousers with print", imgUrl:"images/products/DAM/trousers/d-t%20(3).jpg", idDiv: "product3"},
-    {product: "jacket", name: "Davis - Clay", price: 599, description: "Denim jacket for spring with nice details", imgUrl: "images/products/HERR/jackets_men/m-j%20(1).jpg", idDiv: "product4"},
-    {product: "dress", name: "Nora - Mini", price: 399, description: "Two colored dress with sparkle for kids", imgUrl:"images/products/BARN/dresses/ch-d%20(3).jpg", idDiv: "product5"},
-    {product: "jumper", name: "Enry - Paolo", price: 599, description: "Blue jersey jumpers", imgUrl: "images/products/HERR/jumpers_men/m-ju%20(3).jpg", idDiv: "product6"}
+let clothProducts =[{product: "dress", name: "Amalia - Espirit", price: 299, description: "Svart partyklänning i spets", imgUrl: "images/products/DAM/dresses/d%20(3).jpg", idDiv: "product1" },
+    {product: "skirt", name: "Emla - Ivy", price: 199, description: "Knälång röd kjol med skärp", imgUrl: "images/products/DAM/skirts/d-s%20(5).jpg", idDiv: "product2" },
+    {product: "trousers", name: "Cindy - Dorthy Perkins", price: 599, description: "One piece byxor med tryck", imgUrl:"images/products/DAM/trousers/d-t%20(3).jpg", idDiv: "product3"},
+    {product: "jacket", name: "Davis - Clay", price: 599, description: "Denimjacka med fina detaljer", imgUrl: "images/products/HERR/jackets_men/m-j%20(1).jpg", idDiv: "product4"},
+    {product: "dress", name: "Nora - Mini", price: 399, description: "Tvåfärgad klänning med paljetter för barn", imgUrl:"images/products/BARN/dresses/ch-d%20(3).jpg", idDiv: "product5"},
+    {product: "jumper", name: "Enry - Paolo", price: 599, description: "Blå tröja i jersey", imgUrl: "images/products/HERR/jumpers_men/m-ju%20(3).jpg", idDiv: "product6"}
     ];
 
 //function to loop and create elements with content
@@ -33,7 +33,7 @@ function ProductLoad(){
         newFigures.appendChild(pHeading);
         pHeading.appendChild(textHeading);
         pHeading.style.margin = "8px";
-        
+
         let pPrice = document.createElement("p");
         let textPrice = document.createTextNode(clothProducts[places].price.toString() + " SEK");
         newFigures.appendChild(pPrice);
