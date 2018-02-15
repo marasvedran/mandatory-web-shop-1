@@ -35,12 +35,12 @@ continueBtn.addEventListener("click", function () {
         return false;
     }
 
-    if( document.formBeforePay.postnr.value !== "" &&
-        document.formBeforePay.postnr.value.length !== 10)
+    if( document.formBeforePay.phoneNumber.value !== "" &&
+        document.formBeforePay.phoneNumber.value.length !== 9)
     {
         //document.formBeforePay.phoneNumber.required = false;
         alert( "Inte korrekt ifyllt telefonnummer, hemtelefon eller mobilnummer: 9 -10 nummer" );
-        document.formBeforePay.postnr.focus() ;
+        document.formBeforePay.phoneNumber.focus() ;
         return false;
     }
 
