@@ -1,7 +1,3 @@
-
-//object med input??
-
-
 //button listener to check for validation on form
 
 let continueBtn = document.getElementsByTagName("button")[0];
@@ -38,7 +34,6 @@ continueBtn.addEventListener("click", function () {
     if( document.formBeforePay.phoneNumber.value !== "" &&
         document.formBeforePay.phoneNumber.value.length !== 9)
     {
-        //document.formBeforePay.phoneNumber.required = false;
         alert( "Inte korrekt ifyllt telefonnummer, hemtelefon eller mobilnummer: 9 -10 nummer" );
         document.formBeforePay.phoneNumber.focus() ;
         return false;
@@ -72,5 +67,5 @@ continueBtn.addEventListener("click", function () {
     return( true );
 
 });
-//function checkForValidation() {
+
 
