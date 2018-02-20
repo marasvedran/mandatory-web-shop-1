@@ -226,6 +226,14 @@ main > #index-topSeller > .products > .index-Product >.shoppingBag
     height: 25px;
 }
 
+ .shoppingBag{
+    background: url("images/icons/icon_shopping_bag.png") no-repeat;
+    background-size: cover;
+    border: none;
+    width: 25px;
+    height: 25px;
+
+}
 
 /* topSeller section dam herr barn */
 #containerCategories
