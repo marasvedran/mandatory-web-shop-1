@@ -49,6 +49,10 @@ function ProductLoad(){
         descriptionProduct.style.margin = "8px";
         descriptionProduct.style.width = "180px";
 
+        let btnShoppBag = document.createElement("button");
+        newFigures.appendChild(btnShoppBag);
+        btnShoppBag.setAttribute("class", clothProducts[places].buttonClass);
+
     }
 
 }
