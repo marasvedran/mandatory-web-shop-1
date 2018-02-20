@@ -56,3 +56,5 @@ function ProductLoad(){
     }
 
 }
+
+//function to add product to counter shoppingBag + to checkout
