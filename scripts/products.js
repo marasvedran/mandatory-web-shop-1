@@ -1,5 +1,5 @@
 //when window of products is opened it will load the product images
-window.addEventListener('DOMContentLoaded', ProductLoad, ShowItems);
+window.addEventListener('DOMContentLoaded', ProductLoad);
 
 //array of image objects
 let clothProducts =[{product: "dress", name: "Amalia - Espirit", price: 299, description: "Svart partyklänning i spets", imgUrl: "images/products/DAM/dresses/d%20(3).jpg", idDiv: "product1", buttonID: "shoppingBag"},
@@ -52,24 +52,28 @@ function ProductLoad(){
         let btnShoppBag = document.createElement("button");
         newFigures.appendChild(btnShoppBag);
         btnShoppBag.setAttribute("id", clothProducts[places].buttonID);
-        btnShoppBag.setAttribute("type", clothProducts[places] = "button");
+        btnShoppBag.setAttribute("type", clothProducts[places] = "submit");
 
-
+        let totalItemsInShoppingbag = document.getElementById("totalItemsInShoppingbag");
+        let itemsShownCount = 0;
+        btnShoppBag.addEventListener("click", function () {
+            itemsShownCount += 1;
+            totalItemsInShoppingbag.innerHTML = itemsShownCount.toString();
+            console.log(itemsShownCount);
+        });
     }
 
 }
 
 //function to add product to counter shoppingBag + to checkout
-let btnAddToShoppingBag = document.getElementById("shoppingBag");
-let totalItemsInShoppingbag = document.getElementById("totalItemsInShoppingbag");
-let itemsShownCount = 0;
+//let btnAddToShoppingBag = document.getElementById("shoppingBag");
 
-function ShowItems() {
-    itemsShownCount += 1;
-    totalItemsInShoppingbag.innerHTML = itemsShownCount.toString();
-}
 
-console.log(totalItemsInShoppingbag.innerHTML);
-btnAddToShoppingBag.addEventListener("click", ShowItems);
+/*function ShowItems() {
+
+}*/
+
+//console.log(totalItemsInShoppingbag.innerHTML);
+
 
 
