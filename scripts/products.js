@@ -1,13 +1,13 @@
 //when window of products is opened it will load the product images
-window.addEventListener('load', ProductLoad);
+window.addEventListener('DOMContentLoaded', ProductLoad, ShowItems);
 
 //array of image objects
-let clothProducts =[{product: "dress", name: "Amalia - Espirit", price: 299, description: "Svart partyklänning i spets", imgUrl: "images/products/DAM/dresses/d%20(3).jpg", idDiv: "product1", buttonClass: "shoppingBag"},
-    {product: "skirt", name: "Emla - Ivy", price: 199, description: "Knälång röd kjol med skärp", imgUrl: "images/products/DAM/skirts/d-s%20(5).jpg", idDiv: "product2",  buttonClass: "shoppingBag" },
-    {product: "trousers", name: "Cindy - Dorthy Perkins", price: 599, description: "One piece byxor med tryck", imgUrl:"images/products/DAM/trousers/d-t%20(3).jpg", idDiv: "product3",  buttonClass: "shoppingBag"},
-    {product: "jacket", name: "Davis - Clay", price: 599, description: "Denimjacka med fina detaljer", imgUrl: "images/products/HERR/jackets_men/m-j%20(1).jpg", idDiv: "product4",  buttonClass: "shoppingBag"},
-    {product: "dress", name: "Nora - Mini", price: 399, description: "Tvåfärgad klänning med paljetter för barn", imgUrl:"images/products/BARN/dresses/ch-d%20(3).jpg", idDiv: "product5",  buttonClass: "shoppingBag"},
-    {product: "jumper", name: "Enry - Paolo", price: 599, description: "Blå tröja i jersey", imgUrl: "images/products/HERR/jumpers_men/m-ju%20(3).jpg", idDiv: "product6",  buttonClass: "shoppingBag"}
+let clothProducts =[{product: "dress", name: "Amalia - Espirit", price: 299, description: "Svart partyklänning i spets", imgUrl: "images/products/DAM/dresses/d%20(3).jpg", idDiv: "product1", buttonID: "shoppingBag"},
+    {product: "skirt", name: "Emla - Ivy", price: 199, description: "Knälång röd kjol med skärp", imgUrl: "images/products/DAM/skirts/d-s%20(5).jpg", idDiv: "product2",  buttonID: "shoppingBag" },
+    {product: "trousers", name: "Cindy - Dorthy Perkins", price: 599, description: "One piece byxor med tryck", imgUrl:"images/products/DAM/trousers/d-t%20(3).jpg", idDiv: "product3",  buttonID: "shoppingBag"},
+    {product: "jacket", name: "Davis - Clay", price: 599, description: "Denimjacka med fina detaljer", imgUrl: "images/products/HERR/jackets_men/m-j%20(1).jpg", idDiv: "product4",  buttonID: "shoppingBag"},
+    {product: "dress", name: "Nora - Mini", price: 399, description: "Tvåfärgad klänning med paljetter för barn", imgUrl:"images/products/BARN/dresses/ch-d%20(3).jpg", idDiv: "product5",  buttonID: "shoppingBag"},
+    {product: "jumper", name: "Enry - Paolo", price: 599, description: "Blå tröja i jersey", imgUrl: "images/products/HERR/jumpers_men/m-ju%20(3).jpg", idDiv: "product6",  buttonID: "shoppingBag"}
     ];
 
 //function to loop and create elements with content
@@ -51,10 +51,25 @@ function ProductLoad(){
 
         let btnShoppBag = document.createElement("button");
         newFigures.appendChild(btnShoppBag);
-        btnShoppBag.setAttribute("class", clothProducts[places].buttonClass);
+        btnShoppBag.setAttribute("id", clothProducts[places].buttonID);
+        btnShoppBag.setAttribute("type", clothProducts[places] = "button");
+
 
     }
 
 }
 
 //function to add product to counter shoppingBag + to checkout
+let btnAddToShoppingBag = document.getElementById("shoppingBag");
+let totalItemsInShoppingbag = document.getElementById("totalItemsInShoppingbag");
+let itemsShownCount = 0;
+
+function ShowItems() {
+    itemsShownCount += 1;
+    totalItemsInShoppingbag.innerHTML = itemsShownCount.toString();
+}
+
+console.log(totalItemsInShoppingbag.innerHTML);
+btnAddToShoppingBag.addEventListener("click", ShowItems);
+
+
